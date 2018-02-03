@@ -22,8 +22,8 @@ public class CalculosTest {
     @Test
     public void testOperar(){
         Calculos test = new Calculos();
-        double actual = test.operar("7 9 * 3 1 - *");
-        double expected=126;
+        double actual = test.operar("4 3 + 6 5 * - 2 /");
+        double expected=-11.5;
         assertEquals(expected, actual, 0);}
     
 }

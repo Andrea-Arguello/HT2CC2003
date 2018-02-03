@@ -25,7 +25,7 @@ public class Principal {
         FileReader reader = null;
         BufferedReader buffer = null;
         try {
-            datos = new File("C:\\Users\\cooli\\Desktop\\Programacion\\datos.txt");
+            datos = new File("datos.txt");
             reader = new FileReader(datos);
             buffer = new BufferedReader(reader);
             calculadora postfixCalc = new Calculos();
