@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class Calculos implements calculadora{
     
     protected ArrayList data;
-    StackVector<Double> stack;
+    protected StackVector<Double> stack;
     
     public Calculos()
     {
@@ -24,12 +24,12 @@ public class Calculos implements calculadora{
     }
     
     public double operar(String expresion){
-        expresion=expresion.replace("\\r\\n|\\r|\\n", " ");
+        expresion=expresion+" ";
+        expresion=expresion.replaceAll("\\r", " ").replaceAll("\\n"," ");
         String[] nospace=expresion.split(" ");
         for(int i=0; i<nospace.length; i++){
                     data.add(nospace[i]);
                     }
-        System.out.println(data);
         
         for(int j=0; j<nospace.length; j++)//recorre la expresion y agrega los numeros al stack hasta encontrarse un simbolo
         {

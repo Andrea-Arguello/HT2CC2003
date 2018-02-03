@@ -20,7 +20,10 @@ public class CalculosTest {
      * Test of operar method, of class Calculos.
      */
     @Test
-    public void testOperar() {
-    }
+    public void testOperar(){
+        Calculos test = new Calculos();
+        double actual = test.operar("7 9 * 3 1 - *");
+        double expected=126;
+        assertEquals(expected, actual, 0);}
     
 }

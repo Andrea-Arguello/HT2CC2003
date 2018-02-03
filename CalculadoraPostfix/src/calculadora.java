@@ -12,7 +12,7 @@ public interface calculadora {
 
     /**
      *
-     * @param expresion
+     * @param expresion string de numeros
      * @return un entero
      */
     public double operar(String expresion);
